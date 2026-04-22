@@ -50,8 +50,8 @@ export default function HomeScreen({ navigation }) {
         )}
       />
 
-        <View style={styles.footer}>
-            <Button 
+        <View>
+            <Button style={styles.footer}
                 title="Adicionar Item" 
                 onPress={() => navigation.navigate('Adicionar')} 
             />
@@ -73,7 +73,8 @@ const styles = StyleSheet.create({
   container: { 
     flex: 1,  
     backgroundColor: '#f5f5f5',
-    paddingHorizontal: 20 
+    paddingHorizontal: 20,
+    marginTop: 25
   },
   title: { 
     fontSize: 24, 
@@ -82,6 +83,6 @@ const styles = StyleSheet.create({
   },
   footer: {
     marginBottom: 10,
-    marginTop: 10
+    marginTop: 10,
   }
 });
